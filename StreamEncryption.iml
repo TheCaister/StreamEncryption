@@ -7,5 +7,21 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="java" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../commons-lang3-3.12.0-src/commons-lang3-3.12.0-tests.jar!/" />
+          <root url="jar://$MODULE_DIR$/../commons-lang3-3.12.0-src/commons-lang3-3.12.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../commons-lang3-3.12.0-src/commons-lang3-3.12.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../commons-lang3-3.12.0-src/commons-lang3-3.12.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../commons-lang3-3.12.0-src/commons-lang3-3.12.0-test-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
