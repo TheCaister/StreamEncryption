@@ -1,7 +1,8 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class UserInterface {
-    public static void runMainMenu(){
+    public static void runMainMenu() {
         Scanner scanner = new Scanner(System.in);
         String input;
         int option;
@@ -9,18 +10,17 @@ public class UserInterface {
 
         boolean isFinished = false;
 
-        while(!isFinished){
-            System.out.println("1: Approve User \t2: Ban User\t3: Exit");
-
+        while (!isFinished) {
+            System.out.println("1: Approve User\t2: Ban User\t3: Exit");
+            try {
             input = scanner.nextLine();
 
-            if(!InputValidator.inputIsInteger(input)){
-                System.out.println(Constants.INVALID_INPUT);
-                continue;
-            }
-            else{
-                option = Integer.parseInt(input);
-            }
+                if (!InputValidator.inputIsInteger(input)) {
+                    throw new InputMismatchException(Constants.INVALID_INPUT);
+                } else {
+                    option = Integer.parseInt(input);
+                }
+
 
             switch (option) {
                 case 0 -> {
@@ -28,15 +28,25 @@ public class UserInterface {
                     System.exit(0);
                 }
 
-                case 1 -> System.out.println("Hello");
+                case 1 -> {
+                    System.out.println("Hello");
+                    System.out.println("Approving user...");
+                }
 
                 default -> {
                     System.out.println(Constants.INVALID_INPUT);
-                    continue;
+                   continue;
                 }
             }
 
             System.out.println("You have chosen option: " + option);
+
+            } catch (InputMismatchException ex) {
+                System.out.println(Constants.INVALID_INPUT);
+                System.out.println("1: Approve User\t2: Ban User\t3: Exit");
+                scanner.nextLine();
+            }
+
         }
     }
 }
