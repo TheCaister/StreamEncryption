@@ -1,0 +1,61 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"7c2bbc89-c1f3-44e7-afa5-be6b57697109\" name=\"Changes\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2A0tlkwFJCSqgGuy5Mq4IjzM8E0\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\"\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"7c2bbc89-c1f3-44e7-afa5-be6b57697109\" name=\"Changes\" comment=\"\" />\n      <created>1654158485712</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1654158485712</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 32c4e7dd4fe7eeec01c0cc42c487ffb8f85bb651)
++++ b/.idea/workspace.xml	(date 1654160888518)
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="7c2bbc89-c1f3-44e7-afa5-be6b57697109" name="Changes" comment="" />
++    <list default="true" id="7c2bbc89-c1f3-44e7-afa5-be6b57697109" name="Changes" comment="initial commit + test" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -19,7 +19,8 @@
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true"
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "last_opened_file_path": "/home/imelda/Documents/javaProjects/encryption_keys"
+   }
+ }]]></component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+@@ -31,6 +32,21 @@
+       <option name="presentableId" value="Default" />
+       <updated>1654158485712</updated>
+     </task>
++    <task id="LOCAL-00001" summary="initial commit + test">
++      <created>1654160771791</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1654160771791</updated>
++    </task>
++    <task id="LOCAL-00002" summary="initial commit + test">
++      <created>1654160797417</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1654160797417</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -44,4 +60,8 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="initial commit + test" />
++    <option name="LAST_COMMIT_MESSAGE" value="initial commit + test" />
++  </component>
+ </project>
+\ No newline at end of file
