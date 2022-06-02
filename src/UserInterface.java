@@ -31,6 +31,7 @@ public class UserInterface {
                 case 1 -> {
                     System.out.println("Hello");
                     System.out.println("Approving user...");
+                    isFinished = true;
                 }
 
                 default -> {
