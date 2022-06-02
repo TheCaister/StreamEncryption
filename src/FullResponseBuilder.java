@@ -8,6 +8,8 @@ import java.util.List;
 
 public class FullResponseBuilder {
     public static String getFullResponse(HttpURLConnection con) throws IOException {
+        String output = "";
+
         // Building full response
         // Adding the response status info
         StringBuilder fullResponseBuilder = new StringBuilder();
@@ -15,6 +17,8 @@ public class FullResponseBuilder {
                 .append(" ")
                 .append(con.getResponseMessage())
                 .append("\n");
+
+        output = fullResponseBuilder.toString();
 
         // Getting the headers and adding each of them to the StringBuilder
         // Done in the format HeaderName: HeaderValues
@@ -32,6 +36,9 @@ public class FullResponseBuilder {
                     }
                     fullResponseBuilder.append("\n");
                 });
+
+        output = fullResponseBuilder.toString();
+
         int status = con.getResponseCode();
         Reader streamReader = null;
 
@@ -45,6 +52,7 @@ public class FullResponseBuilder {
         String inputLine;
         while ((inputLine = in.readLine()) != null) {
             fullResponseBuilder.append(inputLine);
+            fullResponseBuilder.append('\n');
         }
         in.close();
 
