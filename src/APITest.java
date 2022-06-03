@@ -1,8 +1,12 @@
-import org.apache.commons.lang3.StringUtils;
-
-import java.io.*;
-import java.net.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.CookieManager;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 public class APITest {
     public static void main(String[] args) throws IOException {
@@ -93,20 +97,12 @@ public class APITest {
         // Then we can carry on with the reading afterwards
 
 
-
-        // Set up output stream
-//        DataOutputStream out = new DataOutputStream(con.getOutputStream());
-//        out.writeBytes(ParameterStringBuilder.getParamsString(parameters));
-//        out.flush();
-//        out.close();
-
-
         System.out.println(ParameterStringBuilder.getParamsString(parameters));
 
         Map<String, String> randParameters = new HashMap<>();
-        randParameters.put("num", "3");
-        randParameters.put("min", "0");
-        randParameters.put("max", "30");
+        randParameters.put("num", "20");
+        randParameters.put("min", "-321");
+        randParameters.put("max", "3000");
         randParameters.put("col", "1");
         randParameters.put("base", "10");
         randParameters.put("format", "plain");
@@ -121,14 +117,6 @@ public class APITest {
 
         randCon.setConnectTimeout(5000);
         randCon.setReadTimeout(5000);
-
-        // Set up output stream
-        String params = ParameterStringBuilder.getParamsString(randParameters);
-        DataOutputStream randOut = new DataOutputStream(randCon.getOutputStream());
-        //randOut.writeBytes(ParameterStringBuilder.getParamsString(randParameters));
-        //randOut.writeBytes("col=1&min=0&max=30&num=3&format=plain&rnd=new&base=10");
-        randOut.flush();
-        randOut.close();
 
 
         status = randCon.getResponseCode();
@@ -150,7 +138,7 @@ public class APITest {
         }
         // Then we can carry on with the reading afterwards
 
-        System.out.println(FullResponseBuilder.getFullResponse(randCon));
+        System.out.println(ResponseBuilder.getFullResponse(randCon));
 
     }
 

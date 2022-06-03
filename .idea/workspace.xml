@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c2bbc89-c1f3-44e7-afa5-be6b57697109" name="Changes" comment="">
+    <list default="true" id="7c2bbc89-c1f3-44e7-afa5-be6b57697109" name="Changes" comment="deleted test">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/APITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/APITest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FullResponseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FullResponseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FullResponseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResponseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ParameterStringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParameterStringBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +79,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.APITest">
+  <component name="RunManager" selected="Application.Driver">
     <configuration name="APITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="APITest" />
       <module name="StreamEncryption" />
@@ -105,9 +109,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Driver" />
         <item itemvalue="Application.APITest" />
         <item itemvalue="Application.CharUtilsPerfRun" />
-        <item itemvalue="Application.Driver" />
       </list>
     </recent_temporary>
   </component>
@@ -176,29 +180,18 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FullResponseBuilder.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/APITest.java</url>
-          <line>149</line>
+          <line>137</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FullResponseBuilder.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FullResponseBuilder.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/APITest.java</url>
-          <line>126</line>
-          <option name="timeStamp" value="7" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Tools.java</url>
+          <line>10</line>
+          <properties class="Tools" method="generateRandomInteger">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

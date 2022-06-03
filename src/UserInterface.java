@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -11,7 +12,7 @@ public class UserInterface {
         boolean isFinished = false;
 
         while (!isFinished) {
-            System.out.println("1: Approve User\t2: Ban User\t3: Exit");
+            System.out.println("1: Approve User\t2: Ban User\t3: Generate Random Integer\t0: Exit");
             try {
             input = scanner.nextLine();
 
@@ -32,6 +33,10 @@ public class UserInterface {
                     System.out.println("Hello");
                     System.out.println("Approving user...");
                     isFinished = true;
+                }
+
+                case 3 -> {
+                    System.out.println("Your random number is: " + Tools.generateRandomInteger());
                 }
 
                 default -> {
